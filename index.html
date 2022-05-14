@@ -1,15 +1,78 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-</head>
-
-<body>
-
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>우리들의 진솔한 이야기</title>
+    <link rel="stylesheet" href="./src/style/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="container-header">
+        <h1 class="logo">
+          <a href="/">우리들의 진솔한 이야기</a>
+        </h1>
+        <nav class="container-nav">
+          <ul class="nav-icons">
+            <li>
+              <a href="/">
+                <img src="./src/images/icons/home-alt.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <button type="button">
+                <img src="./src/images/icons/bookmark.svg" alt="" />
+              </button>
+            </li>
+            <li class="add">
+              <button type="button">
+                <img src="./src/images/icons/add.svg" alt="" />
+              </button>
+            </li>
+            <li class="nickname">
+              <button type="button">
+                <img src="./src/images/icons/user.svg" alt="" />
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                <img src="./src/images/icons/info.svg" alt="" />
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="container-main">
+        <ul class="list-board"></ul>
+        <article class="modal-write">
+          <section class="container-form-write">
+            <h3 class="title-form">게시글 작성</h3>
+            <p class="text-form">솔직한 여러분의 속마음을 이야기해주세요! :)</p>
+            <form>
+              <textarea class="textarea-form" cols="30" rows="10"></textarea>
+              <button class="send-form">작성하기</button>
+            </form>
+            <button type="button" class="btn-close">
+              <img src="./src/images/icons/close.png" alt="로그인 닫기" />
+            </button>
+          </section>
+        </article>
+        <article class="modal-nickname">
+          <section class="container-form-nickname">
+            <h3 class="title-form">닉네임 등록</h3>
+            <p class="my-nickname"></p>
+            <form>
+              <input class="input-form" type="text" placeholder="닉네임을 입력해주세요" />
+              <button class="button-save-nickname">등록하기</button>
+            </form>
+            <button type="button" class="btn-close">
+              <img src="./src/images/icons/close.png" alt="로그인 닫기" />
+            </button>
+          </section>
+        </article>
+      </main>
+    </div>
+    <!-- <script src="./src/js/index.js" type="module"></script> -->
+  </body>
 </html>

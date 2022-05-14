@@ -1,0 +1,50 @@
+@import url(./util/reset.css);
+@import url(./header.css);
+@import url(./modal/add.css);
+@import url(./modal/nickname.css);
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.container-main {
+  background-color: #eaeaea;
+  padding-top: 70px;
+}
+
+.list-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.list-board > li {
+  box-sizing: border-box;
+  padding: 30px;
+  width: 400px;
+  min-height: 350px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 14%) 0px 2px 5px;
+}
+
+.list-board > li > .nickname {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.list-board > li > img {
+  margin-bottom: 30px;
+  border-radius: 30px;
+}
+
+.list-board > li > .content {
+  text-align: start;
+  border: 1px solid #eaeaea;
+  border-radius: 20px;
+  padding: 15px;
+}

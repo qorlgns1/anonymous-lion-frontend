@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "EarlyFontDiary";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container-header {
+  box-sizing: border-box;
+  height: 80px;
+  border-bottom: 1px solid #ccc;
+  padding: 25px 15px;
+}
+
+.logo {
+  font-family: "EarlyFontDiary";
+  display: inline-block;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.container-nav {
+  float: right;
+  margin-top: 2px;
+}
+
+.nav-icons > li {
+  display: inline-block;
+}
+
+.nav-icons > li + li {
+  margin-left: 10px;
+}
