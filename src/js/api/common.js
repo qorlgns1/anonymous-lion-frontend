@@ -1,4 +1,4 @@
-export const serverURL = "http://152.67.234.103:3000/boards";
+export const serverURL = "https://kihoonbae.shop:3000/boards";
 
 export const createSendData = (method, bodyData) => {
   let sendData = {
