@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./src/style/main.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <header class="container-header">
+    <header class="container-header">
+      <div class="wrapper">
         <h1 class="logo">
           <a href="/">우리들의 진솔한 이야기</a>
         </h1>
@@ -22,7 +22,7 @@
               </a>
             </li>
             <li>
-              <button type="button">
+              <button type="button" onclick="alert(`제작중입니다 :D`)">
                 <img src="./src/images/icons/bookmark.svg" alt="" />
               </button>
             </li>
@@ -37,25 +37,27 @@
               </button>
             </li>
             <li>
-              <button type="button">
+              <button type="button" onclick="alert(`제작중입니다 :D`)">
                 <img src="./src/images/icons/info.svg" alt="" />
               </button>
             </li>
           </ul>
         </nav>
-      </header>
-      <main class="container-main">
+      </div>
+    </header>
+    <main class="container-main">
+      <div class="wrapper">
         <ul class="list-board"></ul>
         <article class="modal-write">
           <section class="container-form-write">
             <h3 class="title-form">게시글 작성</h3>
             <p class="text-form">솔직한 여러분의 속마음을 이야기해주세요! :)</p>
             <form>
-              <textarea class="textarea-form" cols="30" rows="10"></textarea>
+              <textarea class="textarea-form" cols="30" rows="10" placeholder="여러분의 진솔한 이야기를 들려주세요 :)"></textarea>
               <button class="button-write-form">작성하기</button>
             </form>
             <button type="button" class="btn-close">
-              <img src="./src/images/icons/close.png" alt="로그인 닫기" />
+              <img src="./src/images/icons/close.svg" alt="로그인 닫기" />
             </button>
           </section>
         </article>
@@ -63,17 +65,18 @@
           <section class="container-form-nickname">
             <h3 class="title-form">닉네임 등록</h3>
             <p class="my-nickname"></p>
-            <form>
+            <form onsubmit="return false;">
               <input class="input-form" type="text" placeholder="닉네임을 입력해주세요" />
               <button type="button" class="button-save-nickname">등록하기</button>
             </form>
             <button type="button" class="btn-close">
-              <img src="./src/images/icons/close.png" alt="로그인 닫기" />
+              <img src="./src/images/icons/close.svg" alt="로그인 닫기" />
             </button>
           </section>
         </article>
-      </main>
-    </div>
+      </div>
+    </main>
+
     <script src="./src/js/index.js" type="module"></script>
   </body>
 </html>

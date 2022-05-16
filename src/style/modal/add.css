@@ -51,6 +51,7 @@
   text-align: center;
   font-weight: 500;
   border-bottom: 1px solid #c4c4c4;
+  position: relative;
 }
 
 .container-form-write .text-form {
@@ -63,11 +64,15 @@
 
 .container-form-write .btn-close {
   position: absolute;
-  padding: 22px 24px;
+  padding: 13px 24px;
   top: 0;
   right: 0;
   z-index: 30;
   background-color: transparent;
+}
+
+.container-form-write .btn-close > img {
+  width: 30px;
 }
 
 .container-form-write .textarea-form {
@@ -75,11 +80,24 @@
   margin-bottom: 30px;
   font-size: 16px;
   padding: 10px;
+  width: 75%;
+  border: 1px solid #888;
+  border-radius: 10px;
+  resize: none;
+}
+
+.container-form-write .textarea-form::placeholder {
+  color: #888;
+}
+
+.container-form-write .textarea-form:focus {
+  border-color: orange;
+  outline: 2px solid orange;
 }
 
 .container-form-write .button-write-form {
+  font-family: "GmarketSansBold";
   display: block;
   margin: 0 auto 20px;
   font-size: 20px;
-  font-weight: bold;
 }

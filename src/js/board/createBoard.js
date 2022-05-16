@@ -1,5 +1,6 @@
 export const createBoard = (data) => {
   const liNode = document.createElement("li");
+
   const nicknameNode = document.createElement("p");
   nicknameNode.classList.add("nickname");
 
@@ -10,10 +11,10 @@ export const createBoard = (data) => {
   descriptionNode.classList.add("content");
 
   const { nickname, description } = data;
-  nicknameNode.textContent = `${nickname}`;
+  nicknameNode.innerHTML = `<strong>${nickname}</strong> 님의 진솔한 이야기`;
   descriptionNode.textContent = `${description}`;
 
-  liNode.append(nicknameNode, imgNode, descriptionNode);
+  liNode.append(imgNode, nicknameNode, descriptionNode);
 
   return liNode;
 };
