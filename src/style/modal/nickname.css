@@ -63,11 +63,15 @@
 
 .container-form-nickname .btn-close {
   position: absolute;
-  padding: 22px 24px;
+  padding: 13px 24px;
   top: 0;
   right: 0;
   z-index: 30;
   background-color: transparent;
+}
+
+.container-form-nickname .btn-close > img {
+  width: 30px;
 }
 
 .container-form-nickname .input-form {
@@ -75,13 +79,24 @@
   margin: 20px 0;
   font-size: 16px;
   padding: 10px;
+  border: 1px solid #888;
+  border-radius: 10px;
+}
+
+.container-form-nickname .input-form::placeholder {
+  color: #888;
+}
+
+.container-form-nickname .input-form:focus {
+  border-color: orange;
+  outline: 1px solid orange;
 }
 
 .button-save-nickname {
+  font-family: "GmarketSansBold";
   display: block;
   margin: 0 auto 20px;
   font-size: 20px;
-  font-weight: bold;
 }
 
 .my-nickname {

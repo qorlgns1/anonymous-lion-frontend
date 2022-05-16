@@ -9,7 +9,7 @@
   box-sizing: border-box;
   height: 80px;
   border-bottom: 1px solid #ccc;
-  padding: 25px 15px;
+  padding: 25px 0;
 }
 
 .logo {
