@@ -11,10 +11,6 @@ export const loadBoardData = () => {
         dataList.removeChild(dataList.firstChild);
       }
 
-      if (dataArr.length % 2) {
-        dataArr.push({});
-      }
-
       dataArr.forEach((data) => {
         const board = createBoard(data);
         dataList.appendChild(board);
