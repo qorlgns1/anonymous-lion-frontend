@@ -5,7 +5,7 @@ export const createBoard = (data) => {
   nicknameNode.classList.add("nickname");
 
   const imgNode = document.createElement("img");
-  imgNode.src = `./src/images/character/boy-${parseInt(Math.random() * 10) % 5}.svg`;
+  imgNode.src = `./src/images/character/user-${parseInt(Math.random() * 10) % 4}.svg`;
 
   const descriptionNode = document.createElement("p");
   descriptionNode.classList.add("content");
