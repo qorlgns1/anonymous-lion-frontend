@@ -41,7 +41,7 @@ export const writeModal = () => {
     toggleModal(targetModal);
 
     fetch(serverURL, createSendData("POST", sendData)).then(() => {
-      loadBoardData();
+      location.reload();
     });
   });
 };
