@@ -63,7 +63,7 @@
 
 .list-board > li > .content {
   max-height: 160px;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding: 15px 0;
   line-height: 20px;
   color: #777;
