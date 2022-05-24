@@ -2,6 +2,7 @@
 @import url(./header.css);
 @import url(./modal/add.css);
 @import url(./modal/nickname.css);
+@import url(./modal/info.css);
 
 @font-face {
   font-family: "GmarketSansBold";
