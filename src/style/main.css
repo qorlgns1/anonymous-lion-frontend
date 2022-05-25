@@ -52,13 +52,20 @@
 }
 
 .list-board > li > .nickname {
+  display: flex;
   padding: 0 0 15px;
   border-bottom: 1px solid #eaeaea;
   font-size: 20px;
 }
 
 .list-board > li > .nickname > strong {
+  display: block;
+  max-width: 130px;
   font-family: "GmarketSansBold";
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 5px;
 }
 
 .list-board > li > .content {
