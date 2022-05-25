@@ -11,7 +11,11 @@ export const createBoard = (data) => {
   descriptionNode.classList.add("content");
 
   const { nickname, description } = data;
-  nicknameNode.innerHTML = `<strong>${nickname}</strong> 님의 진솔한 이야기`;
+
+  const strongEl = document.createElement("strong");
+  strongEl.textContent = nickname;
+
+  nicknameNode.append(strongEl, ` 님의 진솔한 이야기`);
   descriptionNode.textContent = `${description}`;
 
   liNode.append(imgNode, nicknameNode, descriptionNode);
