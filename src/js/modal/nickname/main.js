@@ -26,10 +26,16 @@ export const nicknameModal = () => {
     setNicknameBox(myNicknameNode);
   }
 
-  const seveNicknameBtn = document.querySelector(".button-save-nickname");
+  const saveNicknameBtn = document.querySelector(".button-save-nickname");
   const $nicknameInput = document.querySelector(".container-form-nickname .input-form");
 
-  seveNicknameBtn.addEventListener("click", function () {
+  saveNicknameBtn.addEventListener("click", function () {
+    const nicknameSize = $nicknameInput.value.trim();
+
+    if (!nicknameSize) {
+      alert("닉네임을 입력해주세요.");
+      return;
+    }
     localstorageNicknameSave($nicknameInput); // 닉네임 로컬스토리지 저장
     setNicknameBox(myNicknameNode); // 닉네임 사용자에게 보여주기(업데이트)
     resetNicknameInput($nicknameInput); // 닉네임 input 초기화
