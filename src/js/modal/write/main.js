@@ -30,6 +30,11 @@ export const writeModal = () => {
       return;
     }
 
+    if (!textBox.value) {
+      alert("내용이 없습니다! 작성해주세요");
+      return;
+    }
+
     const sendData = {
       nickname: localStorage.getItem("nickname"),
       description: textBox.value,
