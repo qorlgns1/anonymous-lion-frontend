@@ -30,7 +30,7 @@ export const nicknameModal = () => {
   const $nicknameInput = document.querySelector(".container-form-nickname .input-form");
 
   saveNicknameBtn.addEventListener("click", function () {
-    const nicknameSize = $nicknameInput.value.trim().length;
+    const nicknameSize = $nicknameInput.value.trim();
 
     if (!nicknameSize) {
       alert("닉네임을 입력해주세요.");

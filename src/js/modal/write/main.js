@@ -30,7 +30,8 @@ export const writeModal = () => {
       return;
     }
 
-    if (!textBox.value) {
+    const textboxSize = textBox.value.trim();
+    if (!textboxSize) {
       alert("내용이 없습니다! 작성해주세요");
       return;
     }
