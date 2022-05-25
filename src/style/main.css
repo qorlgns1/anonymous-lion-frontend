@@ -59,13 +59,14 @@
 }
 
 .list-board > li > .nickname > strong {
+  margin: -3px 5px 0 0;
+  padding-top: 3px;
   display: block;
   max-width: 130px;
   font-family: "GmarketSansBold";
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-right: 5px;
 }
 
 .list-board > li > .content {
