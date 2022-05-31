@@ -1,6 +1,7 @@
 import { createSendData, serverURL } from "../../api/common.js";
 import { loadBoardData } from "../../api/loadBoardData.js";
 import { toggleModal } from "../common.js";
+import { shakeBox } from "../common.js";
 import { nicknameCheck } from "../nickname/main.js";
 
 const resetWriteBox = (textarea) => {
@@ -9,6 +10,7 @@ const resetWriteBox = (textarea) => {
 
 export const writeModal = () => {
   const targetModal = document.querySelector(".modal-write");
+  const nicknameModal = document.querySelector(".modal-nickname");
   const showWriteModalBtn = document.querySelector(".add");
 
   showWriteModalBtn.addEventListener("click", () => {
@@ -27,12 +29,14 @@ export const writeModal = () => {
 
     if (!nicknameCheck()) {
       alert("먼저 닉네임을 등록해주세요!");
+      toggleModal(targetModal);
+      toggleModal(nicknameModal);
       return;
     }
 
     const textboxSize = textBox.value.trim();
     if (!textboxSize) {
-      alert("내용이 없습니다! 작성해주세요");
+      shakeBox(textBox, 0.5);
       return;
     }
 
