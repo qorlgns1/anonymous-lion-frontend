@@ -1,4 +1,5 @@
 import { toggleModal } from "../common.js";
+import { shakeBox } from "../common.js";
 
 export const nicknameCheck = () => {
   const localStorageNickname = localStorage.getItem("nickname");
@@ -33,7 +34,7 @@ export const nicknameModal = () => {
     const nicknameSize = $nicknameInput.value.trim();
 
     if (!nicknameSize) {
-      alert("닉네임을 입력해주세요.");
+      shakeBox($nicknameInput, 0.5);
       return;
     }
     localstorageNicknameSave($nicknameInput); // 닉네임 로컬스토리지 저장
