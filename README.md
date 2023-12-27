@@ -1,4 +1,4 @@
-# [anonymous-lion-frontend](http://anonymous-lion.shop/)
+# [anonymous-lion-frontend](http://152.67.234.103:8080/)
 
 ## ✅ **프로젝트 소개**
 
@@ -18,6 +18,7 @@
 - pm2를 이용한 서버 배포
 
 ## 🕰 회의록 (추후 github wiki에 업데이트할 예정입니다)
+
 - [노션 회의록 페이지](https://familiar-cotija-5dc.notion.site/ver1-0-0-a9bf1ce22e7c43e7b3d68418e9ca244d)
 
 ## 👨‍👨‍👧‍👦 PEOPLE
